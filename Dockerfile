@@ -14,7 +14,6 @@ RUN mv /tmp/makisu/makisu-${version}/Makefile /workspace/github.com/uber/makisu/
     && make vendor
 
 RUN mv /tmp/makisu/makisu-${version}/bin /workspace/github.com/uber/makisu/bin \
-    &&  mv /tmp/makisu/makisu-${version}/.git /workspace/github.com/uber/makisu/.git \
     &&  mv /tmp/makisu/makisu-${version}/lib /workspace/github.com/uber/makisu/lib \
     && make bins
 
